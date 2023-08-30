@@ -1,0 +1,15 @@
+! Title: Smalls' List - Annoyances - Microsoft
+! Description: |
+!   Filters for annoyances on Microsoft websites.
+! Last modified: {{ LAST_UPDATED_TIMESTAMP }}
+! Expires: 7 days
+! Homepage: https://github.com/Smalls1652/smalls-filter-lists
+! License: https://github.com/Smalls1652/smalls-filter-lists/blob/main/LICENSE
+
+! ---
+! Microsoft 365 Admin Center - https://admin.microsoft.com
+! ---
+
+! Remove support chat and feedback buttons
+admin.microsoft.com##.feedbackButtonContainerStyles-313._UnsolicitedGiveFeedbackButton_250
+admin.microsoft.com###support-central-feedback-widget-container

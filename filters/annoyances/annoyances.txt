@@ -1,0 +1,8 @@
+! Title: Smalls' List - Annoyances
+! Description: Filters for random annoyances on the web.
+! Last modified: {{ LAST_UPDATED_TIMESTAMP }}
+! Expires: 7 days
+! Homepage: https://github.com/Smalls1652/smalls-filter-lists
+! License: https://github.com/Smalls1652/smalls-filter-lists/blob/main/LICENSE
+
+!#include annoyances-microsoft.txt
