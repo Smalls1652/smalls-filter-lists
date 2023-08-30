@@ -1,6 +1,6 @@
 ! Title: Smalls' List - Annoyances
 ! Description: Filters for random annoyances on the web.
-! Last modified: Wed, 30 Aug 2023 16:47:04 +00:00
+! Last modified: Wed, 30 Aug 2023 17:00:12 +00:00
 ! Expires: 7 days
 ! Homepage: https://github.com/Smalls1652/smalls-filter-lists
 ! License: https://github.com/Smalls1652/smalls-filter-lists/blob/main/LICENSE
