@@ -1,7 +1,7 @@
 ! Title: Smalls' List - Annoyances - Microsoft
 ! Description: |
 !   Filters for annoyances on Microsoft websites.
-! Last modified: Wed, 30 Aug 2023 16:11:23 +00:00
+! Last modified: Wed, 30 Aug 2023 16:47:04 +00:00
 ! Expires: 7 days
 ! Homepage: https://github.com/Smalls1652/smalls-filter-lists
 ! License: https://github.com/Smalls1652/smalls-filter-lists/blob/main/LICENSE
