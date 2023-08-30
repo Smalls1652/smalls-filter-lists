@@ -1,0 +1,29 @@
+name: Compile lists
+
+on:
+    push: 
+        branches: 
+            - master
+
+jobs:
+    compile:
+        name: Compile and push
+        runs-on: ubuntu-latest
+        permissions: 
+            contents: write
+
+        steps:
+            - name: Clone repo
+              uses: actions/checkout@v3
+              with:
+                ref: compiled
+
+            - name: Clone main to temp directory
+              shell: pwsh
+              run: |
+                  git clone --depth=1 https://github.com/Smalls1652/smalls-filter-lists.git /tmp/smalls-filter-lists
+
+            - name: Compile lists and add to compiled branch
+              shell: pwsh
+              run: |
+                  /tmp/smalls-filter-lists/scripts/Compile-Lists.ps1 -OutPath "${{ github.workspace }}"
