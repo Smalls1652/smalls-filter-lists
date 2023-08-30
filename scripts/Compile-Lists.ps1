@@ -8,7 +8,7 @@ $emptyFilePath = Join-Path -Path $OutPath -ChildPath "emptyFile"
 
 if (Test-Path -Path $emptyFilePath) {
     Write-Warning "Removing emptyFile from the 'compiled' branch."
-    Remove-Item -Path $emptyFilePath -Force
+    git rm -f $emptyFilePath
 }
 
 $scriptRoot = $PSScriptRoot
