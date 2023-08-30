@@ -11,5 +11,5 @@
 ! ---
 
 ! Remove support chat and feedback buttons
-admin.microsoft.com##.feedbackButtonContainerStyles-313._UnsolicitedGiveFeedbackButton_250
+admin.microsoft.com##div:matches-attr(class="/.+GiveFeedbackButton.+/")
 admin.microsoft.com###support-central-feedback-widget-container
