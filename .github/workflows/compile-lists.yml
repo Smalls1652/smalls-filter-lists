@@ -3,7 +3,7 @@ name: Compile lists
 on:
     push: 
         branches: 
-            - master
+            - main
 
 jobs:
     compile:
