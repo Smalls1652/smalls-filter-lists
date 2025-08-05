@@ -7,9 +7,11 @@
 ! License: https://github.com/Smalls1652/smalls-filter-lists/blob/main/LICENSE
 
 ! ---
-! Microsoft domains - /^.+?.microsoft.com$/
+! Microsoft domains - *.microsoft.com
 ! ---
 
 ! Remove support chat and feedback buttons
-/^.+?.microsoft.com$/##div:matches-attr("data-automation-id=\"feedback-button-widget\"")
-/^.+?.microsoft.com$/###support-central-feedback-widget-container
+microsoft.com##div:matches-attr("data-automation-id=\"feedback-button-widget\"")
+microsoft.com###support-central-feedback-widget-container
+*.microsoft.com##div:matches-attr("data-automation-id=\"feedback-button-widget\"")
+*.microsoft.com###support-central-feedback-widget-container
