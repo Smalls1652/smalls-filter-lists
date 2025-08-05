@@ -11,10 +11,17 @@
 ! ---
 
 ! Remove support chat and feedback buttons
+!#if ext_ublock
+! aglint-disable invalid-domain-list
+/^.+?.microsoft.com$/##div:matches-attr("data-automation-id=\"feedback-button-widget\"")
+/^.+?.microsoft.com$/###support-central-feedback-widget-container
+! aglint-enable invalid-domain-list
+!#else
 microsoft.com##div:matches-attr("data-automation-id=\"feedback-button-widget\"")
 microsoft.com###support-central-feedback-widget-container
 *.microsoft.com##div:matches-attr("data-automation-id=\"feedback-button-widget\"")
 *.microsoft.com###support-central-feedback-widget-container
+!#endif
 
 ! ---
 ! Azure Portal specific - portal.azure.com
