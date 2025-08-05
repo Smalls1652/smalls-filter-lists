@@ -34,9 +34,9 @@ portal.azure.com##.fxs-cloud-menu-button:has(a#cloud-menu-button)
 portal.azure.com##.fxs-topbar-home.fxs-topbar-copilot
 
 ! Fix search bar placement
-! Note:
-!   This is due to how they've positioned the search bar and
-!   the Copilot button together.  
+! ! Note:
+! ! This is due to how they've positioned the search bar and
+! ! the Copilot button together.  
 portal.azure.com##.fxs-topbar-content > .fxs-topbar-search:remove-attr(style)
 
 ! ---
