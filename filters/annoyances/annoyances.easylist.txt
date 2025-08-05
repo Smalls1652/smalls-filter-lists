@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: Smalls' List - Annoyances
 ! Description: Filters for random annoyances on the web.
-! Last modified: Tue, 05 Aug 2025 15:53:43 +00:00
+! Last modified: Tue, 05 Aug 2025 15:57:10 +00:00
 ! Expires: 7 days
 ! Homepage: https://github.com/Smalls1652/smalls-filter-lists
 ! License: https://github.com/Smalls1652/smalls-filter-lists/blob/main/LICENSE
@@ -30,6 +30,11 @@ microsoft.com###support-central-feedback-widget-container
 
 ! Remove waffle menu button
 portal.azure.com##.fxs-cloud-menu-button:has(a#cloud-menu-button)
+
+! Remove random survey
+! ! Note:
+! ! This *should* block it and no other toasts. Keyword: *should*.
+portal.azure.com##.fxs-toast-content > .fxs-nps
 
 ! Remove Copilot button
 portal.azure.com##.fxs-topbar-home.fxs-topbar-copilot
