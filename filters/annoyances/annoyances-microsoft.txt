@@ -30,6 +30,11 @@ microsoft.com###support-central-feedback-widget-container
 ! Remove waffle menu button
 portal.azure.com##.fxs-cloud-menu-button:has(a#cloud-menu-button)
 
+! Remove random survey
+! ! Note:
+! ! This *should* block it and no other toasts. Keyword: *should*.
+portal.azure.com##.fxs-toast-content > .fxs-nps
+
 ! Remove Copilot button
 portal.azure.com##.fxs-topbar-home.fxs-topbar-copilot
 
