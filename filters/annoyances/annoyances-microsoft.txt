@@ -1,7 +1,7 @@
 ! Title: Smalls' List - Annoyances - Microsoft
 ! Description: |
 !   Filters for annoyances on Microsoft websites.
-! Last modified: Tue, 05 Aug 2025 15:21:07 +00:00
+! Last modified: Tue, 05 Aug 2025 15:37:46 +00:00
 ! Expires: 7 days
 ! Homepage: https://github.com/Smalls1652/smalls-filter-lists
 ! License: https://github.com/Smalls1652/smalls-filter-lists/blob/main/LICENSE
@@ -25,6 +25,12 @@ portal.azure.com##.fxs-cloud-menu-button:has(a#cloud-menu-button)
 
 ! Remove Copilot button
 portal.azure.com##.fxs-topbar-home.fxs-topbar-copilot
+
+! Fix search bar placement
+! Note:
+!   This is due to how they've positioned the search bar and
+!   the Copilot button together.  
+portal.azure.com##.fxs-topbar-content > .fxs-topbar-search:remove-attr(style)
 
 ! ---
 ! Microsoft Intune specific - intune.microsoft.com
