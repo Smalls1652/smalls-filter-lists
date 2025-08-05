@@ -45,3 +45,8 @@ portal.azure.com##.fxs-topbar-content > .fxs-topbar-search:remove-attr(style)
 
 ! Remove waffle menu button
 intune.microsoft.com##.fxs-cloud-menu-button:has(a#cloud-menu-button)
+
+! Remove random survey
+! ! Note:
+! ! This *should* block it and no other toasts. Keyword: *should*.
+intune.microsoft.com##.fxs-toast-content > .fxs-nps
