@@ -1,18 +1,37 @@
 [Adblock Plus 2.0]
 ! Title: Smalls' List - Annoyances
 ! Description: Filters for random annoyances on the web.
-! Last modified: Mon, 22 Jul 2024 14:45:55 +00:00
+! Last modified: Tue, 05 Aug 2025 15:21:07 +00:00
 ! Expires: 7 days
 ! Homepage: https://github.com/Smalls1652/smalls-filter-lists
 ! License: https://github.com/Smalls1652/smalls-filter-lists/blob/main/LICENSE
 
 
 ! ---
-! Microsoft domains - /^.+?.microsoft.com$/
+! Microsoft domains - *.microsoft.com
 ! ---
 
 ! Remove support chat and feedback buttons
-/^.+?.microsoft.com$/##div:matches-attr("data-automation-id=\"feedback-button-widget\"")
-/^.+?.microsoft.com$/###support-central-feedback-widget-container
+microsoft.com##div:matches-attr("data-automation-id=\"feedback-button-widget\"")
+microsoft.com###support-central-feedback-widget-container
+*.microsoft.com##div:matches-attr("data-automation-id=\"feedback-button-widget\"")
+*.microsoft.com###support-central-feedback-widget-container
+
+! ---
+! Azure Portal specific - portal.azure.com
+! ---
+
+! Remove waffle menu button
+portal.azure.com##.fxs-cloud-menu-button:has(a#cloud-menu-button)
+
+! Remove Copilot button
+portal.azure.com##.fxs-topbar-home.fxs-topbar-copilot
+
+! ---
+! Microsoft Intune specific - intune.microsoft.com
+! ---
+
+! Remove waffle menu button
+intune.microsoft.com##.fxs-cloud-menu-button:has(a#cloud-menu-button)
 
 
