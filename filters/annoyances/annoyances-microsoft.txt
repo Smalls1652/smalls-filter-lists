@@ -15,3 +15,20 @@ microsoft.com##div:matches-attr("data-automation-id=\"feedback-button-widget\"")
 microsoft.com###support-central-feedback-widget-container
 *.microsoft.com##div:matches-attr("data-automation-id=\"feedback-button-widget\"")
 *.microsoft.com###support-central-feedback-widget-container
+
+! ---
+! Azure Portal specific - portal.azure.com
+! ---
+
+! Remove waffle menu button
+portal.azure.com##.fxs-cloud-menu-button:has(a#cloud-menu-button)
+
+! Remove Copilot button
+portal.azure.com##.fxs-topbar-home.fxs-topbar-copilot
+
+! ---
+! Microsoft Intune specific - intune.microsoft.com
+! ---
+
+! Remove waffle menu button
+intune.microsoft.com##.fxs-cloud-menu-button:has(a#cloud-menu-button)
