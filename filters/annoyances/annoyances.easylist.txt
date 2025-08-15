@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: Smalls' List - Annoyances
 ! Description: Filters for random annoyances on the web.
-! Last modified: Fri, 15 Aug 2025 14:01:52 +00:00
+! Last modified: Fri, 15 Aug 2025 14:05:59 +00:00
 ! Expires: 7 days
 ! Homepage: https://github.com/Smalls1652/smalls-filter-lists
 ! License: https://github.com/Smalls1652/smalls-filter-lists/blob/main/LICENSE
@@ -14,9 +14,10 @@
 ! Remove support chat and feedback buttons
 !#if ext_ublock
 ! aglint-disable invalid-domain-list
-/^.+?.microsoft.com$/##div:matches-attr("data-automation-id=\"feedback-button-widget\"")
-/^.+?.microsoft.com$/###support-central-feedback-widget-container
-/^.+?.microsoft.com$/###supportCentralContainer
+/^.+?\.microsoft\.com$/##div:matches-attr("data-automation-id=\"feedback-button-widget\"")
+/^.+?\.microsoft\.com$/###support-central-feedback-widget-container
+/^.+?\.microsoft\.com$/###supportCentralContainer
+/^.+?\.microsoft$/$$.obf-ToastContainer
 ! aglint-enable invalid-domain-list
 !#else
 microsoft.com##div:matches-attr("data-automation-id=\"feedback-button-widget\"")
@@ -26,10 +27,6 @@ microsoft.com###supportCentralContainer
 *.microsoft.com###support-central-feedback-widget-container
 *.microsoft.com###supportCentralContainer
 !#endif
-*.microsoft##div:matches-attr("data-automation-id=\"feedback-button-widget\"")
-*.microsoft###support-central-feedback-widget-container
-*.microsoft###supportCentralContainer
-*.microsoft$$.obf-ToastContainer
 
 ! ---
 ! Azure Portal specific - portal.azure.com
