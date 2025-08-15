@@ -1,7 +1,7 @@
 ! Title: Smalls' List - Annoyances - Microsoft
 ! Description: |
 !   Filters for annoyances on Microsoft websites.
-! Last modified: Fri, 15 Aug 2025 14:09:42 +00:00
+! Last modified: Fri, 15 Aug 2025 14:18:43 +00:00
 ! Expires: 7 days
 ! Homepage: https://github.com/Smalls1652/smalls-filter-lists
 ! License: https://github.com/Smalls1652/smalls-filter-lists/blob/main/LICENSE
@@ -16,6 +16,7 @@
 /^.+?\.microsoft\.com$/##div:matches-attr("data-automation-id=\"feedback-button-widget\"")
 /^.+?\.microsoft\.com$/###support-central-feedback-widget-container
 /^.+?\.microsoft\.com$/###supportCentralContainer
+/^.+?\.microsoft$/###supportCentralContainer
 /^.+?\.microsoft$/##.obf-ToastContainer
 ! aglint-enable invalid-domain-list
 !#else
