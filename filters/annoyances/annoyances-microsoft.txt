@@ -16,7 +16,7 @@
 /^.+?\.microsoft\.com$/##div:matches-attr("data-automation-id=\"feedback-button-widget\"")
 /^.+?\.microsoft\.com$/###support-central-feedback-widget-container
 /^.+?\.microsoft\.com$/###supportCentralContainer
-/^.+?\.microsoft$/$##.obf-ToastContainer
+/^.+?\.microsoft$/##.obf-ToastContainer
 ! aglint-enable invalid-domain-list
 !#else
 microsoft.com##div:matches-attr("data-automation-id=\"feedback-button-widget\"")
