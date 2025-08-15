@@ -13,9 +13,10 @@
 ! Remove support chat and feedback buttons
 !#if ext_ublock
 ! aglint-disable invalid-domain-list
-/^.+?.microsoft.com$/##div:matches-attr("data-automation-id=\"feedback-button-widget\"")
-/^.+?.microsoft.com$/###support-central-feedback-widget-container
-/^.+?.microsoft.com$/###supportCentralContainer
+/^.+?\.microsoft\.com$/##div:matches-attr("data-automation-id=\"feedback-button-widget\"")
+/^.+?\.microsoft\.com$/###support-central-feedback-widget-container
+/^.+?\.microsoft\.com$/###supportCentralContainer
+/^.+?\.microsoft$/$$.obf-ToastContainer
 ! aglint-enable invalid-domain-list
 !#else
 microsoft.com##div:matches-attr("data-automation-id=\"feedback-button-widget\"")
@@ -25,10 +26,6 @@ microsoft.com###supportCentralContainer
 *.microsoft.com###support-central-feedback-widget-container
 *.microsoft.com###supportCentralContainer
 !#endif
-*.microsoft##div:matches-attr("data-automation-id=\"feedback-button-widget\"")
-*.microsoft###support-central-feedback-widget-container
-*.microsoft###supportCentralContainer
-*.microsoft$$.obf-ToastContainer
 
 ! ---
 ! Azure Portal specific - portal.azure.com
